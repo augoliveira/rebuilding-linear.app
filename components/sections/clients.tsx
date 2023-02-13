@@ -15,7 +15,7 @@ export const Clients = () => (
   <>
     <p className="mb-12 text-center text-lg text-white md:text-xl">
       <span className="text-primary-text">
-        Powering the world’s best product teams.
+        Powering the world best product teams.
       </span>
       <br className="hidden md:block" /> From next-gen startups to established
       enterprises.

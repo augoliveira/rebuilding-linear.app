@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* CSS - Dinamite Criativa | Codificado por: Ueek Agência Digital | Ano: 2019 | CSS e Mqueries */
+
+/*Dispositivos Maiores*/
+.modal {
+	background: url(/public/assets/dinamite/img/assets/dots.png) center #0f1015;
+	cursor: pointer;
+	display: none;
+	height: 100%;
+	position: fixed;
+	top: 0;
+    left:0;
+	width: 100%;
+	z-index: 80;
+}
+
+.modal .container {
+	margin: 0 auto;
+	width: 1005px;
+}
+
+.modal .container #txt {
+	float: left;
+	padding-left: 80px;
+	width: 405px;
+}
+
+.modal .container #txt h4 {
+	color: #ffcc00;
+	font-family: 'Julietta';
+	font-size: 90px;
+	font-weight: 200;
+}
+
+.modal .container #txt hr {
+	background: #ffcc00;
+	border: 0;
+	height: 1px;
+	margin: 25px 0 25px -31px;
+	width: 283px;
+}
+
+.modal .container #txt p {
+	font-size: 43px;
+	font-weight: 900;
+	line-height: 45px;
+}
+
+.modal .container #txt p br.quebra { display: none; }
+
+.modal .container #txt span {
+	background: #fff;
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	padding: 0 5px;
+}
+
+#m-curriculo .container,
+#m-contato .container {
+	background: url(/public/assets/dinamite/img/assets/bg-modal.png) center no-repeat;
+	height: 651px;
+	padding-top: 125px;
+}
+
+/*Celulares*/
+@media only screen and (max-width: 680px) {
+
+	.modal .container {
+		background-image: url(/public/assets/dinamite/img/mobile/home/modal-mobile.png) !important;
+		background-size: cover !important;
+		background-position: top center !important;
+		padding: 0 20px;
+		width: 100%;
+	}
+
+	#m-curriculo #close-curriculo,
+	#m-contato #close-contato {
+		background-image: url(/public/assets/dinamite/img/assets/close.png) !important;
+		background-size: contain !important;
+		background-position:  no-repeat center !important;
+		left: 20px;
+		top: 35px !important;
+		width: 100px !important;
+	}
+
+	#m-curriculo .container,
+	#m-contato .container {
+		height: 651px;
+		padding-top: 180px;
+	}
+
+	.modal .container #txt { padding-left: 0; }
+
+	.modal .container #txt h4 { font-size: 60px; }
+
+	.modal .container #txt hr {
+		margin-top: 15px;
+		width: 200px;
+	}
+
+	.modal .container #txt p {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	.modal .container #txt p br.quebra { display: inline; }
+
+	.modal .container #txt span {
+		background: #fff;
+		color: #000;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 30px;
+		padding: 0 5px;
+	}
+
+}

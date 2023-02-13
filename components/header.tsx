@@ -8,7 +8,12 @@ import { HamburgerIcon } from "./icons/hamburger";
 import { Logo } from "./icons/logo";
 import classNames from "classnames";
 
+import { navLinks } from "../constants";
+
 export const Header = () => {
+  const [active, setActive] = useState("Home");
+  const [toggle, setToggle] = useState(false);
+
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
 
   useEffect(() => {
@@ -32,7 +37,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" />
         </Link>
 
         <div
@@ -56,27 +61,17 @@ export const Header = () => {
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
-              <li>
-                <Link href="#">Features</Link>
-              </li>
-              <li>
-                <Link href="#">Method</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Customers</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Changelog</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Integrations</Link>
-              </li>
-              <li>
-                <Link href="#">Pricing</Link>
-              </li>
-              <li>
-                <Link href="#">Company</Link>
-              </li>
+              {navLinks.map((nav, index) => (
+          <li
+            key={nav.id}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              active === nav.title ? "text-secondary" : "text-dimWhite"
+            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            onClick={() => setActive(nav.title)}
+          >
+            <a href={`#${nav.id}`}>{nav.title}</a>
+          </li>
+        ))}
             </ul>
           </nav>
         </div>

@@ -1,0 +1,577 @@
+@charset "UTF-8";
+
+/* CSS - Dinamite Criativa | Codificado por: Ueek Agência Digital | Ano: 2019 | Mqueries */
+
+/*Tablets*/
+@media only screen and (max-width:1024px), only screen and (min-device-width:768px)
+				   and (max-device-width:1024px) and (orientation : landscape) {
+
+	/* ------ Estrutura Geral e Home ------ */
+	body { min-width: 660px; }
+	.conteudo {width: 640px !important;}
+
+	section#home .conteudo-fluid nav#redes-fixed,
+	#banner .owl-dots { display: none; }
+
+	#dinamite { background-size: 155%; }
+	#txt1, #txt2 { background-size: 160%; }
+
+	/*CASES*/
+	section#cases {
+		text-align: center;
+		padding: 70px 0 75px;
+		display: block;
+		flex-wrap: wrap;
+	}
+
+	section#cases .conteudo-fluid header { padding-bottom: 30px; }
+	section#cases .conteudo-fluid header h1 { float: none; }
+
+	section#cases .conteudo-fluid header nav {
+		margin: 0 auto;
+		float: none;
+		margin-top: 0;
+		width: 640px;
+	}
+
+	section#cases .conteudo-fluid header nav ul li,
+	section#topo-portfolio nav#cases-menu-interno ul li.filter {
+		font-size: 11px;
+		font-weight: 700;
+		padding: 14px 16px 15px 11px;
+	}
+
+	section#cases #container .case { width: 50%; }
+
+	/*SOBRE*/
+	section#sobre {
+		background: none;
+		height: auto;
+	}
+
+	section#sobre .conteudo article {
+		float: none;
+		margin: 0 auto;
+		padding-top: 50px;
+		width: 630px;
+	}
+
+	/*ESPECIALIDADES*/
+	section#especialidades { padding: 98px 0 60px; }
+	section#especialidades .conteudo #titulo {
+		background-position: 260px 100px;
+		padding-top: 50px;
+		width: 290px;
+	}
+
+	section#especialidades .conteudo #titulo h1 {
+		font-size: 80px;
+		line-height: 85px;
+	}
+
+	section#especialidades .conteudo .container-servico {
+		cursor: default;
+		width: 290px;
+	}
+
+	section#especialidades .conteudo .container-servico .servico { display: none; }
+
+	section#especialidades .conteudo .container-servico .servico-hover {
+		display: block;
+		background-size: contain !important;
+	}
+
+	section#especialidades .conteudo .container-servico .servico-hover h2 {
+		font-size: 25px;
+		line-height: 25px;
+		height: 80px;
+		padding: 20px 0 0 27px;
+	}
+
+	section#especialidades .conteudo .container-servico .servico-hover p {
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 20px;
+		padding: 15px 20px 0 60px;
+	}
+
+	/*CLIENTES*/
+	section#clientes .conteudo #container .marca {
+		margin: 11px;
+		width: 280px;
+	}
+
+	/*WHATSAPP*/
+	section#whatsapp {
+		height: 750px;
+		padding-top: 50px;
+	}
+
+	section#whatsapp .conteudo #txt {
+		color: #000;
+		float: left;
+		padding-top: 100px;
+		width: 170px;
+	}
+
+	section#whatsapp .conteudo #txt p#desc {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	section#whatsapp .conteudo #txt h4 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	section#whatsapp .conteudo #txt h2 { font-size: 57px; }
+
+	section#whatsapp .conteudo #txt button#clique {
+		margin-top: 20px;
+		height: 50px;
+		width: 160px;
+	}
+
+	section#whatsapp .conteudo #txt button#clique i { margin-left: 20px; }
+
+	section#whatsapp .conteudo #txt p#observacao {
+		font-size: 9px;
+		letter-spacing: 0;
+		margin-top: 40px;
+	}
+
+	section#whatsapp .conteudo #phone {
+		float: right;
+		height: auto !important;
+		margin-top: 80px;
+		width: 440px;
+	}
+
+	section#whatsapp .conteudo #phone #celular {
+		background-size: contain;
+		margin-top: 130px;
+		height: 300px;
+		width: 320px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens {
+		float: right;
+		margin-top: -300px;
+		position: relative;
+		width: 200px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens .msg {
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-bottom: 15px;
+		width: 200px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens #primeira {
+		height: 54px;
+		margin-left: -50px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens #segunda { height: 50px; }
+
+	section#whatsapp .conteudo #phone #mensagens #terceira {
+		height: 62px;
+		margin-left: -50px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens #quarta { height: 50px; }
+
+	/**/
+
+	/*CONTATO*/
+	section#contato { background: none; }
+
+	section#contato .conteudo #container {
+		float: none;
+		margin: 0 auto;
+	}
+
+	/******************* Atribuições Footer *********************/
+	footer { padding: 85px 0; }
+	footer .conteudo #linha .box { margin: 0 45px 30px; }
+	footer .conteudo #linha #skype-atendimento { margin-left: 68px; }
+
+	footer .conteudo #ferramentas .ferramenta { margin: 0 50px; }
+	footer .conteudo #ferramentas p#sobre-nos {
+		clear: both;
+		float: none;
+		line-height: 20px;
+		margin: 0;
+		padding: 30px 0 0 0;
+		width: 100%;
+	}
+	/******************* Atribuições Footer *********************/
+
+	/*********************** PORTFÓLIO **************************/
+	article#cliente { padding: 80px 0; }
+	article#cliente #txt { display: none; }
+	article#cliente #txt-mobile { display: block; }
+
+	#desktop-portfa {
+		background-size: contain;
+    	background-repeat: no-repeat;
+    }
+
+	#tablet-portfa  { display: none; }
+	#celular-portfa { display: none; }
+	/*********************** PORTFÓLIO **************************/
+
+	/*********************** ERRO 404 ***************************/
+	body#erro-404 #erro #txt-404 { padding-bottom: 200px; }
+	/*********************** ERRO 404 ***************************/
+}
+
+/*Celulares*/
+@media only screen and (max-width: 680px) {
+
+	/* ------ Estrutura Geral e Home ------ */
+	body { min-width: 300px; }
+	.conteudo {
+		padding: 0 20px;
+		width: 100% !important;
+	}
+
+	.conteudo-fluid { padding: 0 20px; }
+
+	#banner { display: none; }
+
+	header button.orcamento {
+	    font-size: 0;
+	    width: 50px;
+	    margin: -11px 25px 0 0;
+	}
+
+	header button.orcamento img { margin: 0 10px 0 14px; }
+
+	section#home {
+		background: url(/public/assets/dinamite/img/mobile/home/bg-mobile.jpg) no-repeat left top;
+		background-size: cover;
+		height: 630px;
+		padding-top: 30px;
+	}
+
+	nav#menu-open ul { padding-top: 0; }
+	nav#menu-open ul li { margin-bottom: 30px; }
+	nav#menu-open button.orcamento { display: block; }
+
+	/*CASES*/
+	section#cases {
+		text-align: center;
+		padding: 70px 0 75px;
+	}
+
+	section#cases .conteudo-fluid header h1 { font-size: 65px; }
+	section#cases .conteudo-fluid header nav { display: none; }
+
+	section#cases #container .case {
+		float: none;
+		width: 100%;
+	}
+
+	section#cases #container .case .case-ative {
+		background-color: #ccc;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+    height: 280px;
+	}
+
+	section#cases #container .case .case-hover {
+		height: 280px;
+		padding: 60px 15px 0;
+	}
+
+	section#cases #container .case .case-hover h2 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	section#cases .conteudo-fluid button#ver-mais { width: 100%; }
+	section#cases .conteudo-fluid .select { display: block; }
+
+	/*SOBRE*/
+	section#sobre {
+		background: url(/public/assets/dinamite/img/mobile/home/carinha-mobile.png) no-repeat top center;
+		background-size: contain;
+		padding-top: 500px;
+		height: auto;
+	}
+
+	section#sobre .conteudo article {
+		float: none;
+		width: 100%;
+	}
+
+	section#sobre .conteudo article h1 {
+		font-size: 33px;
+		font-weight: 900;
+		line-height: 35px;
+	}
+
+	section#sobre .conteudo article p { padding: 40px 0 0 0; }
+	section#sobre .conteudo #ctas { padding: 38px 0 0 0; }
+	section#sobre .conteudo #ctas .box { float: none; }
+
+	section#sobre .conteudo #ctas span#ou {
+		float: none;
+		padding: 25px 25px 25px 0;
+	}
+
+	/*ESPECIALIDADES*/
+	section#especialidades {
+		background: url(/public/assets/dinamite/img/mobile/home/cases-bg-mobile.png) center bottom no-repeat;
+		background-size: contain;
+		padding: 80px 0 60px;
+	}
+
+	section#especialidades .conteudo #titulo { height: 600px; }
+	section#especialidades .conteudo #titulo,
+	section#especialidades .conteudo .container-servico {
+		float: none;
+		width: 100%;
+	}
+
+	section#especialidades .conteudo .container-servico {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	section#especialidades .conteudo .container-servico .servico-hover {
+		height: auto !important;
+	}
+
+	section#especialidades .conteudo .container-servico .servico-hover h2 {
+		background: none;
+		font-size: 35px !important;
+		font-weight: 900;
+		line-height: 40px;
+		margin-top: 0;
+		height: 113px;
+		padding: 0 0 0 0;
+	}
+
+	/**/
+	section#especialidades .conteudo .container-servico #design-hover {
+		padding: 378px 30px 40px;
+	}
+
+	section#especialidades .conteudo .container-servico #identidade-hover {
+		background-position: 15px 70px;
+		padding: 310px 30px 40px;
+	}
+
+	section#especialidades .conteudo .container-servico #interface-hover {
+		padding: 328px 30px 40px;
+	}
+
+	section#especialidades .conteudo .container-servico #encarte-hover {
+		background-size: 75% !important;
+		background-position: 40px 60px;
+		padding: 330px 30px 40px;
+	}
+
+	section#especialidades .conteudo .container-servico #redes-hover {
+		background: url(/public/assets/dinamite/img/assets/redes-min.png) no-repeat #18181c;
+		background-position: 0px 70px;
+		padding: 310px 30px 40px;
+	}
+	/**/
+
+	section#especialidades .conteudo .container-servico .servico-hover p {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		padding: 0 20px 0 60px;
+	}
+
+	/*CLIENTES*/
+	section#clientes { padding: 60px 0 100px; }
+
+	section#clientes .conteudo header #titulo { float: none; }
+	section#clientes .conteudo header #titulo h3 { font-size: 30px; }
+
+	section#clientes .conteudo header p {
+		clear: both;
+		float: none;
+		padding-top: 40px;
+		width: 100%;
+	}
+
+	section#clientes .conteudo #container { margin-top: 15px; }
+
+	section#clientes .conteudo #container .marca {
+		margin: 0 0 11px 0;
+		height: 260px;
+		width: 100%;
+	}
+
+	/*WHATSAPP*/
+	section#whatsapp {
+		background: url(/public/assets/dinamite/img/mobile/home/bg-wpp-mobile.jpg) center top no-repeat;
+		background-size: cover;
+		height: 740px;
+		padding-top: 250px;
+	}
+
+	section#whatsapp .conteudo #txt {
+		float: none;
+		padding-top: 0;
+		width: 65%;
+	}
+
+	section#whatsapp .conteudo #phone { display: none; }
+
+
+
+	/*CONTATO*/
+	section#contato {
+		background: url(/public/assets/dinamite/img/mobile/home/carinha-footer-mobile.png) top center no-repeat;
+		background-size: contain;
+		height: 870px;
+		padding-top: 320px;
+	}
+
+	section#contato .select { display: block; }
+	section#contato .conteudo #container nav { display: none; }
+
+	section#contato .conteudo #container {
+		float: none;
+		width: 100%;
+	}
+
+	section#contato .conteudo #container p br { display: none; }
+
+	section#contato .conteudo #container h3 { margin-top: 50px; }
+
+	section#contato .conteudo form input[type="text"],
+	section#contato .conteudo form input[type="email"],
+	section#contato .conteudo form textarea {
+		float: none;
+		margin: 0 0 30px;
+		width: 100%;
+	}
+
+	section#contato .conteudo form .min {
+		float: none;
+		width: 100% !important;
+	}
+
+	/******************* Atribuições Footer *********************/
+	footer {
+		background-size: 60%;
+		padding: 85px 0 30px;
+	}
+
+	footer .conteudo #linha { width: 100%; }
+
+	footer .conteudo #linha .box {
+		clear: both;
+		float: none;
+		margin: 0;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	footer .conteudo #linha #skype-atendimento { margin-left: 0; }
+	footer .conteudo #ferramentas { margin-top: 30px; }
+	footer .conteudo #linha .box ul#redes-footer { height: 40px; }
+	footer .conteudo #ferramentas .ferramenta {
+		clear: both;
+		float: none;
+		margin: 0 0 30px 0;
+		width: 100%;
+	}
+
+	footer .conteudo #ferramentas .ferramenta ul#icones { height: 100px; }
+	footer .conteudo #linha .box p#sobre-nos-responsive { display: block; }
+	footer .conteudo #ferramentas p#sobre-nos { display: none; }
+	/******************* Atribuições Footer *********************/
+
+	nav#menu-open #close,
+	#m-curriculo #close-curriculo,
+	#m-contato #close-contato {
+		background: url(/assets/dinamite/img/close.png) no-repeat right;
+		top: 20px;
+	    right: 20px;
+	    width: 50px;
+	}
+
+	/*CONTATO*/
+	.contato-portfa {
+		background: url(/assets/dinamite/img/mobile/home/carinha-footer-mobile.png) center top no-repeat !important;
+    	background-size: contain !important;
+    	padding-top: 340px !important;
+	}
+
+	/*Portfolio*/
+	section#topo-portfolio,
+	section#topo-clientes {
+		background: url(/public/assets/dinamite/img/mobile/home/bg-cases.jpg) no-repeat;
+    	background-position: 0 -140px;
+		background-size: cover;
+	}
+
+	section#topo-portfolio h2 { font-size: 65px; }
+	section#topo-portfolio nav#cases-menu,
+	section#topo-portfolio nav#cases-menu-interno { display: none; }
+	section#topo-portfolio .select { display: block; }
+
+	/*#desktop-portfa {
+		background-size: contain;
+    	background-repeat: no-repeat;
+		display: block;
+	}
+
+	#tablet-portfa  { display: none; }
+	#celular-portfa {
+		display: none;
+	}*/
+
+	#navegacao {
+		background: #fff;
+		padding: 50px 0 40px;
+		width: 100%
+	}
+
+	#navegacao #prev-next {
+		float: none;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+
+	#navegacao #prev-next #prev { float: left; }
+
+
+	/*CLIENTES*/
+	section#topo-clientes h2 { font-size: 70px; }
+}
+
+/** iPhone 6/7/8 Plus **/
+@media only screen and (max-width: 414px) {
+	section#home { height: 710px; }
+}
+
+/** iPhone 6/7/8 **/
+@media only screen and (max-width: 375px) {
+
+}
+
+/** Galaxy S5 **/
+@media only screen and (max-width: 360px) {
+}
+
+/** iPhone 5 e SE **/
+@media only screen and (max-width: 320px) {
+}
+
+/*Monitores maiores*/
+@media only screen and (min-width: 1300px) {
+}

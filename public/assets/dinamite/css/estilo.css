@@ -1,0 +1,1518 @@
+@charset "UTF-8";
+
+/* CSS - Dinamite Criativa | Codificado por: Ueek Agência Digital | Ano: 2019 */
+
+/*
+font-family: 'Poppins', sans-serif; 400,500,700,800,900
+font-family: 'Julietta'
+*/
+/******************* Atribuições Gerais *********************/
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased !important;
+	-moz-font-smooth:antialiased !important;
+	-o-font-smoothing:antialiased;
+	-ms-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+*::selection,
+*::-moz-selection,
+*::-webkit-selection {
+	background:#c0d445;
+	color:#fff;
+}
+
+
+
+a {
+	cursor:pointer;
+	text-decoration:none;
+}
+
+br { clear:both; }
+img { border:0; }
+
+input,
+textarea,
+select { outline: none; }
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background: url(/assets/dinamite/img/dots.png) center #0f1015;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+.conteudo {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 1170px;
+}
+
+.conteudo-fluid {
+	margin: 0 auto;
+	padding: 0 60px;
+	width: 100%;
+}
+
+.soft-hover {
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 50);
+	filter: alpha(opacity = 50);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+strong, b { font-weight: 700; }
+/******************* Atribuições Gerais *********************/
+
+/******************** Atribuições Topo **********************/
+header#fixed-home {
+    background: #000;
+    display: none;
+    height: 80px;
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 48;
+}
+
+header#fixed-home a#marca-click {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 26px;
+    position: relative;
+    width: 158px;
+    z-index: 2;
+    /*margin-left: -158px;*/
+}
+
+header#fixed-home #marca {
+	cursor: pointer;
+	float: left;
+	margin-top: 10px;
+}
+
+header#fixed-home .hamburguer {
+	cursor: pointer;
+	float: right;
+	margin-top: 4px;
+}
+
+header#fixed-home .hamburguer:hover { opacity: 0.8; }
+
+button.orcamento {
+    background: #ffcc00;
+    border-radius: 50px;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    margin: -11px 65px 0 0;
+    width: 173px;
+    text-transform: uppercase;
+}
+
+button.orcamento img {
+	float: left;
+    margin: 0 10px 0 30px;
+    display: inline-block;
+}
+
+button.orcamento span {
+	display: inline-block;
+	float: left;
+}
+
+button.orcamento:hover { background: #fff; }
+
+nav#menu-open {
+	background: url(/assets/dinamite/img/dots.png) center #0f1015;
+	cursor: pointer;
+	display: none;
+	height: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+    overflow-y: auto;
+	width: 100%;
+	z-index: 50;
+}
+
+nav#menu-open ul li {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	list-style: none;
+	letter-spacing: 5px;
+	margin-bottom: 46px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav#menu-open ul li a { color: #fff; }
+nav#menu-open ul li a:hover { color: #ffcc00; }
+
+nav#menu-open #navegacao-open { display: none; }
+nav#menu-open #rs {
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+
+nav#menu-open #rs a {
+	border-radius: 30px;
+	display: inline-block;
+	color: #fff;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 5px;
+	text-align: center;
+	width: 48px;
+}
+
+nav#menu-open #rs a:hover { color: #ffcc00; }
+
+nav#menu-open button.orcamento {
+    float: none;
+    margin: 0 auto;
+}
+
+nav#menu-open #close,
+#m-curriculo #close-curriculo,
+#m-contato #close-contato {
+	background: url(/assets/dinaminte/img/close.png) no-repeat;
+	cursor: pointer;
+	height: 36px;
+	position: absolute;
+	right: 70px;
+	top: 50px;
+	width: 112px;
+	z-index: 20;
+}
+
+nav#menu-open #close:hover,
+#m-curriculo #close-curriculo:hover,
+#m-contato #close-contato:hover { opacity: 0.8; }
+
+section#home {
+	height: 100%;
+	padding-top: 60px;
+	position: relative;
+	z-index: 10;
+}
+
+header#fixed-home #marca {
+	cursor: pointer;
+	float: left;
+	margin-top: 7px;
+}
+
+section#home .conteudo-fluid header a#marca-click {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 26px;
+    position: relative;
+    width: 158px;
+    z-index: 2;
+    /*margin-left: -158px;*/
+}
+
+section#home .conteudo-fluid header #marca {
+	float: left;
+	margin-top: 7px;
+}
+
+section#home .conteudo-fluid header .hamburguer {
+	cursor: pointer;
+	float: right;
+	margin-top: 3px;
+}
+
+section#home .conteudo-fluid header .hamburguer:hover { opacity: 0.8; }
+
+section#home .conteudo-fluid nav#redes-fixed {
+	float: right;
+	margin-right: 70px;
+	text-align: center;
+	width: 22px;
+}
+
+section#home .conteudo-fluid nav#redes-fixed ul li {
+	font-size: 20px;
+	list-style: none;
+	margin-bottom: 40px;
+}
+
+section#home .conteudo-fluid nav#redes-fixed ul li a { color: #fff; }
+section#home .conteudo-fluid nav#redes-fixed ul li a:hover { color: #ffcc00; }
+
+/*Banner Parallax*/
+#banner {
+	background-image: url(/assets/dinamite/img/parallax/bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mapa {
+	background: url(/assets/dinamite/img/parallax/mapa.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+#bolinhas {
+	background: url(/assets/dinamite/img/parallax/pontos.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
+#tracos {
+	background: url(/assets/dinamite/img/parallax/linhas.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
+
+#x {
+	background: url(/assets/dinamite/img/parallax/x.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+}
+
+#dinamite {
+	background: url(/assets/dinamite/img/assets/loading.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+#raio {
+	background: url(/assets/dinamite/img/parallax/selo2.png) no-repeat center;
+	margin: 2.5% 0 0 26.6%;
+	height: 146px;
+	position: absolute;
+	width: 146px;
+	z-index: 6;
+}
+
+#selo {
+	background: url(/assets/dinamite/img/parallax/selo1.png) no-repeat center;
+	margin: 2.5% 0 0 26.6%;
+	height: 146px;
+	position: absolute;
+	width: 146px;
+	z-index: 7;
+
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 15000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+       -moz-animation-name: spin;
+       -moz-animation-duration: 15000ms;
+       -moz-animation-iteration-count: infinite;
+       -moz-animation-timing-function: linear;
+        -ms-animation-name: spin;
+        -ms-animation-duration: 15000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+		    animation-name: spin;
+		    animation-duration: 15000ms;
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+#txt1 {
+	background: url(/assets/dinamite/img/parallax/estamos.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 8;
+}
+
+#txt2 {
+	background: url(/assets/dinamite/img/parallax/evoluindo.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+}
+/******************** Atribuições Topo **********************/
+
+
+/************************ Conteúdo **************************/
+/*CASES*/
+.cases-interna { padding-top: 0 !important; }
+
+section#cases {
+	height: auto !important;
+ 	padding: 75px 0 95px;
+}
+
+section#cases .conteudo-fluid { height: auto !important; }
+section#cases .conteudo-fluid header { padding-bottom: 70px; }
+
+section#cases .conteudo-fluid header h1 {
+	float: left;
+	font-size: 90px;
+	font-weight: 900;
+	line-height: 104px;
+}
+
+section#cases .conteudo-fluid header nav {
+	float: right;
+	margin-top: 30px;
+}
+
+/* Custom Select */
+section#cases .conteudo-fluid .select { display: none; }
+
+section#cases .conteudo-fluid header nav ul li {
+	background: url(/assets/dinamite/img/point.png) right center no-repeat;
+	cursor: pointer;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	list-style: none;
+	padding: 14px 26px 14px 20px;
+}
+
+section#cases .conteudo-fluid header nav ul li:last-child {
+	background: none;
+	padding-right: 20px;
+}
+
+section#cases .conteudo-fluid header nav ul li:hover,
+section#cases .conteudo-fluid header nav ul li.ativo {
+	border-bottom: 1px solid #ffcc00;
+	color: #ffcc00;
+	
+}
+
+section#cases #container { height: auto !important; }
+
+section#cases #container .case {
+	cursor: pointer;
+	float: left;
+	width: 33.33%;
+	flex-wrap: wrap;
+	
+}
+
+
+section#cases #container .case .case-ative {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+section#cases #container .case .case-hover {
+	display: none;
+	height: 500px;
+	padding-top: 170px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+
+section#cases #container .case .case-hover .categoria {
+	color: #ffcc00;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 6px;
+	
+}
+
+section#cases #container .case .case-hover h2 {
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 53px;
+	text-transform: uppercase;
+}
+
+section#cases #container .case .case-hover hr {
+	background: #ffcc00;
+	border: 0;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	margin-top: 23px;
+	margin-left: -100px;
+	width: 230px;
+}
+
+section#cases #container .case .case-hover a {
+	color: #fff;
+	display: block;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 6px;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+
+section#cases #container .case .case-hover a:hover 
+{
+	color: #ffcc00; 
+
+}
+
+section#cases .conteudo-fluid button#ver-mais,
+section#cases .conteudo-fluid button#ver-mais-home {
+	background: url(/assets/dinamite/img/loading.png) left center no-repeat transparent;
+	background-position: 15px;
+	border: 1px solid #8b8b8b;
+	border-radius: 100px;
+	cursor: pointer;
+	color: #fff;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 60px;
+	margin: 0 auto;
+	margin-top: 60px;
+	height: 60px;
+	padding-left: 15px;
+	width: 225px;
+}
+
+section#cases .conteudo-fluid button#ver-mais:hover,
+section#cases .conteudo-fluid button#ver-mais-home:hover {
+	background: url(/assets/dinamite/img/loading-black.png) left center no-repeat #ffcc00;
+	background-position: 15px;
+	border: 1px solid #ffcc00;
+	color: #000;
+}
+
+#acabou,
+#carregando {
+	clear: both;
+	display: none;
+	font-size: 13px;
+	padding-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+/*SOBRE*/
+section#sobre {
+	background: url(../../../img/face.webp) no-repeat center;
+  background-size: auto;
+	height: 94vh;
+	z-index: 1;
+}
+
+section#sobre .conteudo article {
+	margin-top: 5rem;
+	float: right;
+
+	width: 100%;
+}
+
+section#sobre .conteudo article h2 {
+	color: #ffcc00;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+}
+
+section#sobre .conteudo article h1 {
+	font-size: 43px;
+	font-weight: 900;
+	line-height: 45px;
+}
+
+section#sobre .conteudo article h1 span { color: #ffcc00; }
+
+section#sobre .conteudo article p {
+	line-height: 30px;
+	padding: 40px 0 0 120px;
+}
+
+section#sobre .conteudo article p span {
+	background: #fff;
+	color: #000;
+	font-weight: 700;
+}
+
+section#sobre .conteudo #ctas { padding: 38px 0 0 120px; }
+
+section#sobre .conteudo #ctas .box {
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	width: 198px;
+}
+
+section#sobre .conteudo #ctas .box a.ir {
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+
+section#sobre .conteudo #ctas .box a.ir:hover { color: #ffcc00; }
+
+section#sobre .conteudo #ctas span#ou {
+	color: #ffcc00;
+	display: block;
+	float: left;
+	font-size: 15px;
+	font-weight: 800;
+	padding: 25px 25px 0 7px;
+}
+
+/*ESPECIALIDADES*/
+section#especialidades { padding: 98px 0 60px; }
+
+section#especialidades .conteudo #titulo {
+	background: url(/assets/dinamite/img/square.png) no-repeat;
+	background-position: 285px 100px;
+	float: left;
+	margin: 5px;
+	height: 675px;
+	padding-top: 100px;
+	width: 370px;
+}
+
+section#especialidades .conteudo #titulo h3 {
+	color: #ffcc00;
+	font-size: 15px;
+	font-weight: 800;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+section#especialidades .conteudo #titulo h1 {
+	font-size: 90px;
+	font-weight: 900;
+	line-height: 95px;
+}
+
+section#especialidades .conteudo #titulo hr {
+	border: 0;
+	background: #ffcc00;
+	height: 1px;
+	margin: 40px 0 10px -67px;
+	float: left;
+	width: 163px;
+}
+
+section#especialidades .conteudo #titulo h2 {
+	color: #ffcc00;
+	font-family: 'Julietta';
+	font-size: 90px;
+	font-weight: 200;
+	padding-left: 15px;
+}
+
+section#especialidades .conteudo .container-servico {
+	background-color: #18181c;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+	width: 370px;
+}
+
+section#especialidades .conteudo .container-servico .servico {
+	background: url(/assets/dinamite/img/detalhe.png) #18181c center bottom no-repeat;
+	height: 675px;
+	padding-top: 240px;
+	text-align: center;
+}
+
+section#especialidades .conteudo .container-servico .servico h2 {
+	font-size: 25px;
+	font-weight: 900;
+	margin-top: 32px;
+}
+
+section#especialidades .conteudo .container-servico .servico h2 span { color: #ffcc00; }
+
+section#especialidades .conteudo .container-servico #design {
+	background: url(/assets/dinamite/img/corner-left-top.png) #18181c left top no-repeat,
+				url(/assets/dinamite/img/detalhe.png) #18181c center bottom no-repeat;
+}
+
+section#especialidades .conteudo .container-servico #identidade {
+	background: url(/assets/dinamite/img/corner-top-right.png) #18181c right top no-repeat,
+				url(/assets/dinamite/img/detalhe.png) #18181c center bottom no-repeat;
+}
+
+section#especialidades .conteudo .container-servico #interface {
+	background: url(/assets/dinamite/img/corner-left-bottom.png) #18181c left bottom no-repeat,
+				url(/assets/dinamite/img/detalhe.png) #18181c center bottom no-repeat;
+}
+
+section#especialidades .conteudo .container-servico #redes {
+	background: url(/assets/dinamite/img/corner-right-bottom.png) #18181c right bottom no-repeat,
+				url(/assets/dinamite/img/detalhe.png) #18181c center bottom no-repeat;
+}
+
+section#especialidades .conteudo .container-servico .servico-hover {
+	background: #18181c;
+	display: none;
+	padding: 355px 30px 0;
+	height: 675px;
+}
+
+section#especialidades .conteudo .container-servico .servico-hover h2 {
+	background: url(/assets/dinamite/img/detalhe.png) left center no-repeat;
+	font-size: 35px;
+	font-weight: 900;
+	line-height: 40px;
+	height: 113px;
+	padding: 40px 0 0 27px;
+}
+
+section#especialidades .conteudo .container-servico .servico-hover h2 span { color: #ffcc00; }
+
+section#especialidades .conteudo .container-servico .servico-hover p {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 22px 20px 0 60px;
+}
+
+section#especialidades .conteudo .container-servico #design-hover {
+	background: url(/assets/dinamite/img/interface-min.png) no-repeat #18181c;
+	background-position: 10px 65px;
+  transition: 0,5;
+  transition: transform 0,5s ease-in-out;
+}
+section#especialidades .conteudo .container-servico #design ::before{
+	background: url(/assets/dinamite/img/interface-min.png) no-repeat #18181c;
+	background-position: 10px 65px;
+  transition: 0,5;
+  transform: scale3d(0);
+  transition: transform 0,5s ease-in-out;
+  transform-origin: left;
+}
+section#especialidades .conteudo .container-servico #design-hover ::before{
+	background: url(/assets/dinamite/img/interface-min.png) no-repeat #18181c;
+	background-position: 10px 65px;
+  transition: 0,5;
+  transform: scale3d(0);
+  transition: transform 0,5s ease-in-out;
+  transform-origin: left;
+}
+
+
+section#especialidades .conteudo .container-servico #identidade-hover {
+	background: url(/assets/dinamite/img/id-min.png) no-repeat #18181c;
+	background-position: 10px 90px;
+}
+
+section#especialidades .conteudo .container-servico #interface-hover {
+	background: url(/assets/dinamite/img/interface-min.png) no-repeat #18181c;
+	background-position: 5px 70px;
+}
+
+section#especialidades .conteudo .container-servico #encarte-hover {
+	background: url(/assets/dinamite/img/capas-min.png) no-repeat #18181c;
+	background-position: 25px 60px;
+}
+
+section#especialidades .conteudo .container-servico #redes-hover {
+	background: url(/assets/dinamite/img/redes-min.png) no-repeat #18181c;
+	background-position: 10px 90px;
+}
+
+/*CLIENTES*/
+section#clientes { padding: 60px 0 100px; }
+
+section#clientes .conteudo header #titulo { float: left; }
+
+section#clientes .conteudo header #titulo h3 {
+	font-size: 43px;
+	font-weight: 700;
+}
+
+section#clientes .conteudo header #titulo h2 {
+	color: #ffcc00;
+	font-family: 'Julietta';
+	font-size: 90px;
+	font-weight: 200;
+	margin-top: -30px;
+}
+
+section#clientes .conteudo header #titulo hr {
+	border: 0;
+	background: #ffcc00;
+	height: 1px;
+	margin: 15px 0 0 -67px;
+	float: left;
+	width: 163px;
+}
+
+section#clientes .conteudo header p {
+	float: right;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+	margin-top: 10px;
+	width: 440px;
+}
+
+section#clientes .conteudo #container { margin-top: 25px; }
+
+section#clientes .conteudo #container .marca {
+	-webkit-align-items: center;
+			align-items: center;
+	-webkit-justify-content: center;
+			justify-content: center;
+	background: #18181c;
+	display: flex;
+	display: -webkit-flex;
+	float: left;
+	height: 180px;
+	margin: 11px;
+	width: 262px;
+}
+
+section#clientes .conteudo #container button#ver-mais,
+section#clientes .conteudo button#ver-mais-clientes {
+	background: url(/assets/dinamite/img/loading.png) left center no-repeat transparent;
+	background-position: 15px;
+	border: 1px solid #8b8b8b;
+	border-radius: 100px;
+	cursor: pointer;
+	color: #fff;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 60px;
+	margin: 0 auto;
+	margin-top: 60px;
+	height: 60px;
+	padding-left: 15px;
+	width: 225px;
+}
+
+section#clientes .conteudo #container button#ver-mais:hover,
+section#clientes .conteudo button#ver-mais-clientes:hover {
+	background: url(/assets/dinamite/img/assets/loading-black.png) left center no-repeat #ffcc00;
+	background-position: 15px;
+	border: 1px solid #ffcc00;
+	color: #000;
+}
+
+/*WHATSAPP*/
+section#whatsapp {
+	background: url(/assets/dinamite/img/assets/wpp.png) center no-repeat;
+	height: 862px;
+	padding-top: 103px;
+}
+
+section#whatsapp .conteudo #txt {
+	color: #000;
+	float: left;
+	padding-top: 100px;
+	overflow: hidden;
+	width: 292px;
+}
+
+section#whatsapp .conteudo #txt p#desc {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+section#whatsapp .conteudo #txt h4 {
+	font-size: 43px;
+	font-weight: 900;
+	line-height: 45px;
+	margin: 20px 0;
+}
+
+section#whatsapp .conteudo #txt h2 {
+	font-family: 'Julietta';
+	font-size: 90px;
+	font-weight: 200;
+	padding-left: 7px;
+	margin-top: -30px;
+}
+
+section#whatsapp .conteudo #txt button#clique {
+	background: #000;
+	border: 0;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 13px;
+	margin-top: 30px;
+	text-transform: uppercase;
+	height: 60px;
+	width: 195px;
+}
+
+section#whatsapp .conteudo #txt button#clique a { color: #fff; }
+
+section#whatsapp .conteudo #txt button#clique:hover { background: #fff; }
+section#whatsapp .conteudo #txt button#clique:hover a { color: #000; }
+
+section#whatsapp .conteudo #txt button#clique i {
+	color: #ffcc00;
+	display: inline-block;
+	float: left;
+	font-size: 30px;
+	margin: 0 0 0 40px;
+}
+
+section#whatsapp .conteudo #txt button#clique span {
+	display: inline-block;
+	float: left;
+	margin: 5px 0 0 7px;
+}
+
+section#whatsapp .conteudo #txt p#observacao {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 22px;
+	margin-top: 116px;
+	text-transform: uppercase;
+}
+
+section#whatsapp .conteudo #phone {
+	float: right;
+	height: 200px;
+	margin-top: 80px;
+	width: 850px;
+}
+
+section#whatsapp .conteudo #phone #celular {
+	background: url(/assets/dinamite/img/assets/celular.png) no-repeat;
+	height: 548px;
+	float: left;
+	position: relative;
+	width: 690px;
+}
+
+section#whatsapp .conteudo #phone #mensagens {
+	float: right;
+	margin-top: -620px;
+	position: relative;
+	width: 380px;
+	z-index: 1;
+}
+
+section#whatsapp .conteudo #phone #mensagens .msg {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+	width: 376px;
+}
+
+section#whatsapp .conteudo #phone #mensagens #primeira {
+	background-image: url(/assets/dinamite/img/assets/msg1.png);
+	height: 104px;
+	margin-left: -50px;
+}
+
+section#whatsapp .conteudo #phone #mensagens #segunda {
+	background-image: url(/assets/dinamite/img/assets/msg2.png);
+	height: 100px;
+}
+
+section#whatsapp .conteudo #phone #mensagens #terceira {
+	background-image: url(/assets/dinamite/img/assets/msg3.png);
+	height: 121px;
+	margin-left: -50px;
+}
+
+section#whatsapp .conteudo #phone #mensagens #quarta {
+	background-image: url(/assets/dinamite/img/assets/msg4.png);
+	height: 100px;
+}
+
+/*CONTATO*/
+.contato-portfa {
+	background: url(/assets/dinamite/img/assets/form-bg2.jpg) center top no-repeat !important;
+	padding-top: 70px !important;
+}
+
+section#contato {
+	background: url(/assets/dinamite/img/assets/form-bg.jpg) center no-repeat;
+	height: 100%;
+}
+
+section#contato .select { display: none; }
+
+section#contato .conteudo #container {
+	float: left;
+	padding-top: 120px;
+	width: 510px;
+}
+
+section#contato .conteudo #container nav ul li {
+	border-right: 4px solid #ffcc00;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	list-style: none;
+	letter-spacing: 2px;
+	margin-right: 25px;
+	padding-right: 25px;
+}
+
+section#contato .conteudo #container nav ul li.no { border-right: 0; }
+section#contato .conteudo #container nav ul li:hover { color: #ffcc00; }
+
+section#contato .conteudo #container h3 {
+	font-size: 43px;
+	font-weight: 900;
+}
+
+section#contato .conteudo #container h2 {
+	color: #ffcc00;
+	font-family: 'Julietta';
+	font-weight: 300;
+	font-size: 90px;
+	margin-top: -25px;
+}
+
+section#contato .conteudo #container p {
+	font-size: 15px;
+	line-height: 30px;
+	padding-top: 15px;
+}
+
+section#contato .conteudo form { margin-top: 55px; }
+section#contato .conteudo #envia-trabalho { display: none; }
+
+section#contato .conteudo form input[type="text"],
+section#contato .conteudo form input[type="email"],
+section#contato .conteudo form textarea {
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #8b8b8b;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	margin: 0 7px 30px;
+	padding-bottom: 25px;
+	width: 495px;
+}
+
+section#contato .conteudo form input[type="text"]::placeholder { color: #fff; }
+section#contato .conteudo form input[type="email"]::placeholder { color: #fff; }
+section#contato .conteudo form textarea::placeholder { color: #fff; }
+
+section#contato .conteudo form .min {
+	float: left;
+	width: 240px !important;
+}
+
+section#contato .conteudo form textarea {
+	height: 160px;
+	resize: none;
+}
+
+section#contato .conteudo form input[type="submit"] {
+	background: none;
+	border: 1px solid #8b8b8b;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	float: right;
+	text-transform: uppercase;
+	height: 60px;
+	width: 195px;
+}
+
+section#contato .conteudo form input[type="submit"]:hover {
+	background: #ffcc00;
+	border: 1px solid #ffcc00;
+	color: #000;
+}
+/************************ Conteúdo **************************/
+
+
+/******************* Atribuições Footer *********************/
+footer { padding: 85px 0; }
+footer .conteudo #linha { width: 100%; }
+
+footer .conteudo #linha .box {
+	float: left;
+	margin-right: 55px;
+}
+
+footer .conteudo #linha .box p#sobre-nos-responsive {
+	color: #757780;
+	display: none;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 30px;
+}
+
+footer .conteudo #linha .box p#sobre-nos-responsive b { color: #fff; }
+
+footer .conteudo #linha .box .icon-titulo {
+	height: 56px;
+	width: 100%;
+}
+
+footer .conteudo #linha .box .icon-titulo object {
+	float: left;
+	margin-right: 15px;
+}
+
+footer .conteudo #linha .box .icon-titulo h2 {
+	font-size: 18px;
+	float: left;
+	line-height: 21px;
+}
+
+footer .conteudo #linha .box span {
+	clear: both;
+	color: #757780;
+	display: block;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+footer .conteudo #linha .box span a { color: #757780; }
+
+footer .conteudo #linha .box strong {
+	clear: both;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+footer .conteudo #linha .box ul#redes-footer { margin-top: 15px; }
+
+footer .conteudo #linha .box ul#redes-footer li {
+	float: left;
+	font-size: 20px;
+	list-style: none;
+	margin-right: 25px;
+}
+
+footer .conteudo #linha .box ul#redes-footer li a { color: #fff; }
+footer .conteudo #linha .box ul#redes-footer li a:hover { color: #ffcc00; }
+
+footer .conteudo #ferramentas { margin-top: 30px; }
+
+footer .conteudo #ferramentas .ferramenta {
+	float: left;
+	font-size: 12px;
+	line-height: 21px;
+	margin-right: 125px;
+}
+
+footer .conteudo #ferramentas .ferramenta:last-child { margin-right: 0; }
+
+footer .conteudo #ferramentas .ferramenta ul#icones { margin-top: 20px; }
+footer .conteudo #ferramentas .ferramenta #invision { margin-top: 30px; }
+
+footer .conteudo #ferramentas .ferramenta ul#icones li {
+	color: #757780;
+	font-size: 10px;
+	float: left;
+	list-style: none;
+	margin-right: 22px;
+	text-align: center;
+	width: 60px;
+}
+
+footer .conteudo #ferramentas .ferramenta ul#icones li object,
+footer .conteudo #ferramentas .ferramenta ul#icones li img { margin-top: 10px; }
+
+footer .conteudo #ferramentas p#sobre-nos {
+	color: #757780;
+	float: right;
+	font-size: 12px;
+	line-height: 20px;
+	width: 440px;
+}
+
+footer .conteudo #ferramentas p#sobre-nos strong { color: #fff; }
+/******************* Atribuições Footer *********************/
+
+/*********************** PORTFÓLIO **************************/
+section#topo-portfolio {
+	background-attachment: fixed;
+	background-image: url(/assets/dinamite/img/topo-portfa.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 428px;
+	text-align: center;
+}
+
+section#topo-portfolio header {
+	margin-bottom: 70px;
+	padding-top: 60px;
+}
+
+section#topo-portfolio header a#marca-click {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 26px;
+    position: relative;
+    width: 158px;
+    z-index: 2;
+    /*margin-left: -158px;*/
+}
+
+section#topo-portfolio header #marca {
+	float: left;
+	margin-top: 7px;
+}
+
+section#topo-portfolio header .hamburguer {
+	cursor: pointer;
+	float: right;
+	margin-top: 3px;
+}
+
+section#topo-portfolio header .hamburguer:hover { opacity: 0.8; }
+
+section#topo-portfolio h2 {
+	font-size: 107px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+section#topo-portfolio nav#cases-menu,
+section#topo-portfolio nav#cases-menu-interno {
+	margin: 0 auto;
+	width: 820px;
+}
+
+section#topo-portfolio nav#cases-menu ul li.filter,
+section#topo-portfolio nav#cases-menu-interno ul li.filter {
+	background: url(/assets/dinamite/img/point.png) right center no-repeat;
+	cursor: pointer;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	list-style: none;
+	padding: 14px 26px 14px 20px;
+}
+
+section#topo-portfolio nav#cases-menu ul li.ultimo,
+section#topo-portfolio nav#cases-menu-interno ul li.ultimo  {
+	background: none;
+	padding-right: 20px;
+}
+
+section#topo-portfolio nav#cases-menu ul li.filter:hover,
+section#topo-portfolio nav#cases-menu-interno ul li.filter:hover,
+section#topo-portfolio nav#cases-menu-interno ul li.ativo {
+	border-bottom: 1px solid #ffcc00;
+	color: #ffcc00;
+}
+
+section#topo-portfolio .select { display: none; }
+
+article#cliente {
+	background: #fff;
+	color: #0f1015;
+	padding: 100px 0 70px;
+}
+
+article#cliente #prev { float: left; }
+
+article#cliente #prev, article #next {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin-top: 25px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	width: 125px;
+}
+
+article#cliente #next {
+	float: right;
+	width: 113px;
+}
+
+article#cliente #prev a, article #next a { color: #0f1015 ; }
+article#cliente #prev:hover a, article #next:hover a { color: #ffcc00; }
+article#cliente #prev:hover { background: url(/assets/dinamite/img/line.png) no-repeat bottom right; }
+article#cliente #next:hover { background: url(/assets/dinamite/img/line.png) no-repeat bottom left; }
+
+article#cliente #prev a img {
+	float: left;
+	margin-right: 10px;
+}
+
+article#cliente #next a img { float: right; }
+
+
+article#cliente #txt,
+article#cliente #txt-mobile {
+	margin: 0 auto;
+	margin-top: -30px;
+	text-align: center;
+	width: 870px;
+}
+
+article#cliente #txt-mobile {
+	display: none;
+	margin-left: 0;
+	padding-top: 100px;
+	width: 100%;
+}
+
+article#cliente #txt h5,
+article#cliente #txt-mobile h5 {
+	background: url(/assets/dinamite/img/linha-hash.png) center no-repeat;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 14px;
+	padding-left: 9px;
+	text-transform: uppercase;
+}
+
+article#cliente #txt h1,
+article#cliente #txt-mobile h1 {
+	font-size: 43px;
+	font-weight: 900;
+	margin-top: 10px;
+}
+
+article#cliente #txt p,
+article#cliente #txt-mobile p {
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 20px;
+}
+
+.container-portfolio {
+	min-height: auto;
+	background-position: top center;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.container-portfolio img { width: 100%; }
+
+#navegacao {
+	background: #fff;
+	margin-top: -8px;
+	padding-top: 77px;
+	width: 100%;
+}
+
+#navegacao #prev-next {
+	background: #fff;
+	float: left;
+	padding: 0 145px 61px 0;
+	position: absolute;
+	width: 585px;
+}
+
+#navegacao #prev-next #prev { float: left; }
+
+#navegacao #prev-next #prev, #navegacao #prev-next #next {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	width: 125px;
+}
+
+#navegacao #prev-next #next {
+	float: right;
+	width: 113px;
+}
+
+#navegacao #prev-next a, #navegacao #prev-next #next a { color: #0f1015 ; }
+
+#navegacao #prev-next #prev:hover a, #navegacao #prev-next #next:hover a { color: #ffcc00; }
+#navegacao #prev-next #prev:hover { background: url(/assets/dinamite/img/line.png) no-repeat bottom right; }
+#navegacao #prev-next #next:hover { background: url(/assets/dinamite/img/line.png) no-repeat bottom left; }
+
+#navegacao #prev-next #prev a img {
+	float: left;
+	margin-right: 10px;
+}
+
+#navegacao #prev-next #next a img { float: right; }
+/*********************** PORTFÓLIO **************************/
+
+/*********************** ERRO 404 ***************************/
+#erro-404 {
+	background-image: url(/assets/dinamite/img/assets/bg-404.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100%;
+	padding-top: 230px;
+	width: 100%;
+}
+
+#erro-404 h6 {
+	display: block;
+	float: left;
+	font-size: 70px;
+	font-weight: 900;
+	line-height: 76px;
+	text-transform: uppercase;
+}
+
+#erro-404 #txt-404 {
+	float: right;
+	text-align: right;
+	width: 500px;
+}
+
+#erro-404 #txt-404 span#quatro {
+	font-size: 230px;
+	font-weight: 900;
+	line-height: 230px;
+}
+
+#erro-404 #txt-404 span.linha {
+	background: #fff;
+	color: #000;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+
+#erro-404 #txt-404 a {
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+
+#erro-404 #txt-404 a:hover { color: #ffcc00; }
+/*********************** ERRO 404 ***************************/
+
+
+/*********************** CLIENTES ***************************/
+section#topo-clientes {
+	background-attachment: fixed;
+	background-image: url(/assets/dinamite/img/assets/topo-portfa.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 428px;
+	text-align: center;
+}
+
+section#topo-clientes header {
+	margin-bottom: 70px;
+	padding-top: 60px;
+}
+
+section#topo-clientes header a#marca-click {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 26px;
+    position: relative;
+    width: 158px;
+    z-index: 2;
+    margin-left: -158px;
+}
+
+section#topo-clientes header #marca {
+	float: left;
+	margin-top: 7px;
+}
+
+section#topo-clientes header .hamburguer {
+	cursor: pointer;
+	float: right;
+	margin-top: 3px;
+}
+
+section#topo-clientes header .hamburguer:hover { opacity: 0.8; }
+
+section#topo-clientes h2 {
+	font-size: 107px;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+/*********************** CLIENTES **************************/
+
+/*Macbook*/
+@media only screen and (max-width: 1280px){
+	section#whatsapp .conteudo #phone #celular {
+		background-size: contain;
+		margin-top: 40px;
+		height: 400px;
+	}
+
+	section#whatsapp .conteudo #phone #mensagens { margin-top: -450px; }
+}
