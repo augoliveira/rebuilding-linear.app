@@ -154,5 +154,10 @@ module.exports = {
       bounce: "240ms ease 0s 1 running bounce",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ]
 };
