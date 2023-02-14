@@ -6,10 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.8",
+    "@heroicons/react": "^2.0.14",
+    "animejs": "^3.2.1",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "^13.1.6",
+    "next-themes": "^0.2.1",
+    "@nextui-org/react": "^1.0.0-beta.12",
     "@supabase/supabase-js": "2.7.1",
     "@swc/helpers": "0.4.14",
     "@tailwindcss/aspect-ratio": "0.4.2",

@@ -12,6 +12,10 @@
     font-size: 62.5%;
   }
 
+  .indicator{
+    transition: left .4s;
+  }
+
   .highlighted-keys .active rect:first-child {
     fill-opacity: 0.4;
   }

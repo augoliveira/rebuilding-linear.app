@@ -92,11 +92,6 @@ html {
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 h1 {
   font-size: 55px;
 }
@@ -2832,8 +2827,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  
-  
+
+
 }
 .works-header .capt h4 {
   font-weight: 200;
@@ -2865,7 +2860,7 @@ body {
   left: 0;
   top: 0;
   text-align: center;
-  
+
 }
 
 .static {
@@ -6024,7 +6019,7 @@ body {
   .works-header.hfixd {
     position: fixed;
   }
-  
+
   .about .img-mons .img1,
   .about .img-mons .img2,
   .about .img-mons .img3 {

@@ -52,7 +52,6 @@ const Demos = () => {
       <header
         ref={fixedHeader}
         className="works-header fixed-slider hfixd valign bg-img"
-        data-overlay-dark="7"
       >
         <div className="container">
           <div className="row justify-content-center">

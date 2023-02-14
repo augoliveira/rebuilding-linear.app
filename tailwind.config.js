@@ -1,18 +1,11 @@
-/** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./components/**/*.{js,ts,jsx,tsx}",
-    './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './ui/**/*.{js,ts,jsx,tsx}',
-
-  ],
-
+  content: ["./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{ts,tsx}"],
   theme: {
-    extend: {
+    extend: {},
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      sans: '"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu, Cantarell,"Open Sans","Helvetica Neue",sans-serif',
     },
     fontSize: {
       xs: "1.3rem",
@@ -30,14 +23,21 @@ module.exports = {
     },
     colors: {
       gray: colors.zinc,
-      'gray-1000': 'rgb(17,17,19)',
-      'gray-1100': 'rgb(10,10,11)',
-      primary: "#fab702",
+        'gray-1000': 'rgb(17,17,19)',
+        'gray-1100': 'rgb(10,10,11)',
+        vercel: {
+          pink: '#FF0080',
+          blue: '#0070F3',
+          cyan: '#50E3C2',
+          orange: '#F5A623',
+          violet: '#7928CA',
+        },
+      transparent: "transparent",
+      white: "#fff",
+      primary: "#00040f",
       secondary: "#00f6ff",
       dimWhite: "rgba(255, 255, 255, 0.7)",
       dimBlue: "rgba(9, 151, 124, 0.1)",
-      transparent: "transparent",
-      white: "#fff",
       "off-white": "#f7f8f8",
       "transparent-white": "rgba(255, 255, 255, 0.08)",
       background: "#000212",
@@ -78,15 +78,6 @@ module.exports = {
         "radial-gradient(circle at bottom center,var(--color),transparent 70%)",
       "glass-gradient":
         "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
-    },
-    backgroundImage: ({ theme }) => ({
-      'vc-border-gradient': `radial-gradient(at left top, ${theme(
-        'colors.gray.500',
-      )}, 50px, ${theme('colors.gray.800')} 50%)`,
-    }),
-    backgroundImage: {
-      'hero-pattern': "url('/img/hero-pattern.svg')",
-      'footer-texture': "url('/img/footer-texture.png')",
     },
     boxShadow: {
       primary: "rgb(80 63 205 / 50%) 0px 1px 40px",
@@ -163,8 +154,5 @@ module.exports = {
       bounce: "240ms ease 0s 1 running bounce",
     },
   },
-  },
-  plugins: [require('@tailwindcss/forms'),
-  require('@tailwindcss/line-clamp'),
-  require('@tailwindcss/aspect-ratio'),],
+  plugins: [],
 };
