@@ -69,7 +69,7 @@ export const Header = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link href={`#${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
             </ul>
@@ -77,9 +77,14 @@ export const Header = () => {
         </div>
 
         <div className="ml-auto flex h-full items-center">
-          <Link className="mr-6 text-sm" href="#">
-            Log in
-          </Link>
+          <Link className="mr-6 text-sm"
+        href={{
+          pathname: '/restaurarImage',
+          query: { name: 'test' },
+        }}
+      >
+        Aumentar as vendas
+      </Link>
           <Button href="#">Sign up</Button>
         </div>
 

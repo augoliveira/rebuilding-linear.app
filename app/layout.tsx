@@ -26,12 +26,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="PT-BR" className="[color-scheme:dark]">
       <head />
-      <body className="overflow-y-scroll bg-fixed bg-gray-1100 bg-[url('/grid.svg')]">
+      <body className="bg-fill bg-[url('/background.png')] bg-fixed bg-no-repeat">
       {isLoading && isHome ? (
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
         <><div>
-              <Header />
               <Cursor />
               <Social />
               <main className="bg-page-gradient pt-navigation-height">

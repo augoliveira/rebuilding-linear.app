@@ -6,18 +6,21 @@ import { Clients } from "../components/sections/clients";
 import { HomepageHero } from "../components/sections/homepage-hero";
 import { UnlikeAnyTool } from "../components/sections/unlike-any-tool";
 import { Card } from "../components/sections/card"
+import { Header } from "#/components/header";
 
 export default function Homepage() {
   return (
     <>
-      <div className="overflow-hidden pb-[16.4rem] md:pb-[25.6rem]">
+    <Header />
+      <div className="bg-gray-1100 bg-fixed bg-[url('/grid.svg')]">
+
         <Container className="pt-[6.4rem]">
           <HomepageHero />
         </Container>
       </div>
 
         <Card />
-      
+
       <div
         className={classNames(
           "mask-radial-faded pointer-events-none relative z-[-1] my-[-12.8rem] h-[60rem] overflow-hidden",
