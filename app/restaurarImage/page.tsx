@@ -10,7 +10,7 @@ import SquigglyLines from "#/ui/SquigglyLines";
 import { Testimonials } from "#/ui/Testimonials";
 import { Analytics } from '@vercel/analytics/react';
 
-const Home: NextPage = () => {
+export default function RestaurarImage() {
   const router = useRouter();
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
@@ -80,4 +80,3 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
