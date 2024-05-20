@@ -16,8 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="PT-BR" className="[color-scheme:dark]">
       <head />
       <body className="bg-fill bg-[url('/background.png')] bg-fixed bg-no-repeat">
-
-        <><div>
+            <div>
               <Cursor />
               <Social />
               <main className="bg-page-gradient pt-navigation-height">
@@ -25,8 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </main>
               <Footer />
               <CopyrightLinearBanner />
-            </div><AnalyticsWrapper /></>
-        )}
+            </div><AnalyticsWrapper />
       </body>
     </html>
   );
