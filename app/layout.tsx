@@ -7,7 +7,7 @@ import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import Social from "#/components/Social"
 import "../styles/globals.css";
-import "../styles/styles.css";
+
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
